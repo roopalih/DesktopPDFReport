@@ -58,7 +58,16 @@ public abstract class TestBase extends AppiumUtilities {
     	//There are some errors in the next line
         ((Object) driver).executeScript("window.location.reload();");
     }
+    
+    public void restart1App() {
+        //switchToNativeView();
+        //driver.resetApp();
 
+        // This refreshes in browser to go back to landing page
+    	
+    	//There are some errors in the next line
+        ((Object) driver).executeScript("window.location.reload();");
+    }
     @AfterMethod
     public void takeScreenShotOfFailure(ITestResult result) {
         if (result.getStatus() == ITestResult.FAILURE) {
