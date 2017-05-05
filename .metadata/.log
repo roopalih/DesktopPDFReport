@@ -1,0 +1,16 @@
+!SESSION 2017-05-04 22:15:17.992 -----------------------------------------------
+eclipse.buildId=3.7.3.201602251025-RELEASE-e46
+java.version=1.8.0_91
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.springsource.sts.ide -product org.springsource.sts.ide -keyring /Users/roopali/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.springsource.sts.ide -data /Users/roopali/DesktopPDFReport -product org.springsource.sts.ide -keyring /Users/roopali/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2017-05-04 22:15:23.014
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jface.text 2 0 2017-05-04 22:15:26.998
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-05-04 22:15:27.001
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
