@@ -1,6 +1,6 @@
 package Utilities;
 
-//
+//This is the util class
 import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedCondition;
