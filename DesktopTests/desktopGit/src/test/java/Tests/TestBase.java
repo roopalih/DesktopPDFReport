@@ -54,6 +54,8 @@ public abstract class TestBase extends AppiumUtilities {
         //driver.resetApp();
 
         // This refreshes in browser to go back to landing page
+    	
+    	//There are some errors in the next line
         ((Object) driver).executeScript("window.location.reload();");
     }
 
