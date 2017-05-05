@@ -22,12 +22,12 @@ public abstract class TestBase extends AppiumUtilities {
 
         driver.manage().timeouts().implicitlyWait(35, TimeUnit.SECONDS);
 
-        loginToZone();
+        loginToZone(); //Login method called
     }
 
     private void loginToZone() {
         // because we are testing a hybrid app
-        switchToWebView();
+        switchToWebView(); // switching to webview
 
         // go to production sax
         driver.get("https://www.smartapp.com/gid/mobile/gettoken?ctp=%7b'ht'%3a'drd'%2c'ac'%3a'zc'%2c'lo'%3a'no'%2c'ver'%3a'AppV15'%2c'ct'%3a'hil'%7d");
