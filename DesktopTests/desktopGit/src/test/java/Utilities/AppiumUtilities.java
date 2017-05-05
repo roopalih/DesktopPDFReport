@@ -14,11 +14,12 @@ import java.util.Set;
 public class AppiumUtilities {
 
     protected static AppiumDriver driver;
+    public WebDriver driver1;
 
     public AppiumUtilities() {}
 
     public void waitForVisibilityOf(By locator) {
-        WebDriverWait wait = new WebDriverWait(driver, 30);
+        WebDriverWait wait = new WebDriverWait(WebDriverWait, 30);
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 
