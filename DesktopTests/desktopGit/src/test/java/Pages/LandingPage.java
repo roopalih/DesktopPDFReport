@@ -3,10 +3,12 @@ package Pages;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.UnhandledAlertException;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LandingPage extends BasePage {
+    public static WebDriver driver;
 
     By zoneCentral_Button = By.cssSelector("div.x-button-normal.x-button.ZoneCentral.zoneCenProjectBTNModified");
     By homeButton = By.cssSelector(".x-button-icon.home-picto.x-icon-mask");

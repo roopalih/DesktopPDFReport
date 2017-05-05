@@ -10,6 +10,7 @@ public class LoginPage extends BasePage {
     By password = By.cssSelector("#loginPassword");
     By login_Button = By.cssSelector("#LoginBtn");
 
+    public WebDriver driver;
     public LoginPage login() {
 
         try {
@@ -30,7 +31,7 @@ public class LoginPage extends BasePage {
             switchToWebView();
 
             try {
-                driver.hideKeyboard();
+                //driver.hideKeyboard();
             }
             catch (WebDriverException e)
             {
