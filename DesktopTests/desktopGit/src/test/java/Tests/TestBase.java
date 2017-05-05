@@ -18,6 +18,7 @@ import java.util.concurrent.TimeUnit;
 public abstract class TestBase extends AppiumUtilities {
     public WebDriver driver;
 
+    //Before suite method runs at the start of the test suite
     @BeforeSuite
     public void setUpAppium() throws MalformedURLException {
         // We SHOULD NOT set our own DesiredCapabilities - Device Farm does this at the server level
@@ -28,6 +29,7 @@ public abstract class TestBase extends AppiumUtilities {
         loginToZone(); //Login method called
     }
 
+    //This is method for login to a zone
     private void loginToZone() {
         // because we are testing a hybrid app
         switchToWebView(); // switching to webview
@@ -40,6 +42,7 @@ public abstract class TestBase extends AppiumUtilities {
         new LandingPage().waitForPageToLoad();
     }
 
+    // Runs at the last
     @AfterSuite
     public void tearDownAppium() {
         driver.quit();
