@@ -21,4 +21,18 @@ public class ViewSmartAppsTest extends TestBase {
         takeScreenshot("smartApps");
         switchToWebView();
     }
+    
+    @Test
+    public void goToSmartAppsList1() throws InterruptedException {
+
+        // navigate to Smart Apps List
+        driver.findElement(LandingPage.smartAppsButton).click();
+
+        // wait for page to load
+        waitForVisibilityOf(SmartAppsPage.IQFileApp);
+
+        switchToNativeView();
+        takeScreenshot("smartApps");
+        switchToWebView();
+    }
 }
